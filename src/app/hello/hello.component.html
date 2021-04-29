@@ -1,0 +1,20 @@
+<div id = "body">
+  <h1>{{title}}</h1>
+  <p>{{message}}</p>
+  <form [formGroup] = "myControl"
+    (submit) = "onSubmit();">
+    <div>
+      <select formControlName="control"
+      size="3" multiple>
+        <option>android</option>
+        <option>iOS</option>
+        <option>blackberry</option>
+        <option>symbian</option>
+        <option>Fucsia</option>
+      </select>
+    </div>
+    <div>
+      <input type = "submit" value="click">
+    </div>
+  </form>
+</div>
